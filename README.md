@@ -39,5 +39,5 @@ Make sure you have the following installed in your computer:
 
 ## Reference 
 
-- [Presentation slides](shorturl.at/kou05)
+- [Presentation slides](https://docs.google.com/presentation/d/1O5a6raDueOwbq9_i_tZ1kD6ba776WUi0HgzzrVkzRYE/edit?usp=sharing)
 - [Codelab documentation](https://docs.google.com/document/d/1wK08fBhKyhz88bx7-mIDXQSTZAq5tmko/edit?usp=sharing&ouid=103343524775880660503&rtpof=true&sd=true)
