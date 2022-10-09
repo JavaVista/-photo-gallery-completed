@@ -1,17 +1,56 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Thank you
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Thank you</ion-title>
     </ion-toolbar>
   </ion-header>
+<div class="ion-padding-top">
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<!-- ionic card component -->
+<ion-card color="light">
+    <div class="img-wrapper">
+      <img src="https://media-exp1.licdn.com/dms/image/C4E03AQFg9O1U7OKmgw/profile-displayphoto-shrink_400_400/0/1549234338033?e=1670457600&v=beta&t=rh4qs2t5cGjQKAqwa5TxQv2Egrn-SzOma4igvXkf9TA" />
+      <ion-button color="light" (click)="openLinkedIn()">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </ion-button>
+    </div>
+    <ion-card-content class="ion-text-center">
+      <h2>Javier “Javi” Carrion </h2>
+      <ion-text color="medium">
+        <div style="display: flex;" class="ion-justify-content-center">
+          <p>Building an Ionic Application with Angular</p>
+        </div>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<!-- FAB = Floating Action Button -->
+<ion-fab horizontal="center" vertical="center" slot="fixed">
+  <ion-fab-button color="danger">
+    <ion-icon name="share"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="top">
+    <ion-fab-button color="light" (click)="openGithub()">
+      <ion-icon name="logo-github"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" (click)="openSlides()">
+      <ion-icon name="easel-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+  <ion-fab-list side="bottom">
+    <ion-fab-button color="primary" (click)="openTwitter()">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
+
 </ion-content>

@@ -18,12 +18,12 @@ export class Tab2Page implements OnInit {
   async ngOnInit(): Promise<void> {
     await this.photoService.loadSaved();
   }
-  
+
   addPhotoToGallery() {
     this.photoService.addNewToGallery();
   }
-  
-  public async showActionSheet(photo: UserPhoto, position: number) {
+
+  async showActionSheet(photo: UserPhoto, position: number) {
     const actionSheet = await this.actionSheetController.create({
       header: 'Photos',
       buttons: [{
@@ -39,11 +39,11 @@ export class Tab2Page implements OnInit {
         role: 'cancel',
         handler: () => {
           // Nothing to do, action sheet is automatically closed
-          }
+        }
       }]
     });
     await actionSheet.present();
   }
-  
+
 
 }

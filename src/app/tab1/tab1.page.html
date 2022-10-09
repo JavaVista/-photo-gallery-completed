@@ -1,17 +1,78 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Resources
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Resources</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <!-- ionic accordion component -->
+  <ion-accordion-group #accordionGroup multiple="true" value="resources" expand="inset" >
+    <ion-icon size="large" color="primary" name="albums-outline"></ion-icon>
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-label>Ionic SDK</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-item (click)="openSDK()">
+          <ion-icon name="globe-outline" slot="end"></ion-icon>
+          <ion-label>ionic.io/sdk</ion-label>
+        </ion-item>
+      </div>
+    </ion-accordion>
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-label>Ionic Framework</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-item (click)="openFramework()">
+          <ion-icon name="globe-outline" slot="end"></ion-icon>
+          <ion-label>ionic.io/framework</ion-label>
+        </ion-item>
+      </div>
+    </ion-accordion>
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-label>Capacitor</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content"> 
+        <ion-item (click)="openCapacitor()">
+          <ion-icon name="globe-outline" slot="end"></ion-icon>
+          <ion-label>capacitorjs.com</ion-label>
+        </ion-item>
+      </div>
+    </ion-accordion>
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-label>Angular</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-item (click)="openNg()">
+          <ion-icon name="globe-outline" slot="end"></ion-icon>
+          <ion-label>angular.io</ion-label>
+        </ion-item>
+      </div>
+    </ion-accordion>
+    <ion-accordion>
+      <ion-item slot="header" color="light">
+        <ion-label>Codelab documentation</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">
+        <ion-item (click)="openCodelab()">
+          <ion-icon name="globe-outline" slot="end"></ion-icon>
+          <ion-label>shorturl.at/uFUY9</ion-label>
+        </ion-item>
+      </div>
+    </ion-accordion>
+  </ion-accordion-group>
+  
+  <ion-button (click)="onCloseAccordion()">Close All</ion-button>
+
 </ion-content>

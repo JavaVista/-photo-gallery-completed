@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { Browser } from '@capacitor/browser';
+import { IonAccordionGroup } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +9,34 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  @ViewChild('accordionGroup', { static: true }) accordionGroup: IonAccordionGroup;
 
-  constructor() {}
+  constructor() { }
+
+
+  onCloseAccordion = () => {
+    this.accordionGroup.value = 'resources';
+  };
+
+  openSDK = async () => {
+    await Browser.open({ url: 'https://ionic.io/sdk' });
+  };
+
+  openFramework = async () => {
+    await Browser.open({ url: 'https://ionic.io/framework' });
+  };
+
+  openCapacitor = async () => {
+    await Browser.open({ url: 'https://capacitorjs.com' });
+  };
+
+  openNg = async () => {
+    await Browser.open({ url: 'https://angular.io' });
+  };
+
+  openCodelab = async () => {
+    await Browser.open({ url: 'https://docs.google.com/document/d/1wK08fBhKyhz88bx7-mIDXQSTZAq5tmko/edit?usp=sharing&ouid=103343524775880660503&rtpof=true&sd=true' });
+  };
 
 }
+
