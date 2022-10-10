@@ -1,6 +1,6 @@
 # GDG Central Florida - Ionic/Capacitor wizardry with Angular
 
-This the **completed code** for Building an Ionic Application with Angular
+This is the **completed code** for Building an Ionic Application with Angular
 
 ## The App
 
