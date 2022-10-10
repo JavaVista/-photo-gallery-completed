@@ -13,8 +13,34 @@
     </ion-toolbar>
   </ion-header>
 
+  <!-- ionic card component -->
+  <ion-card>
+    <img src="https://devfestflorida.com/static/media/DevFest_SaveTheDate_01.436ffa2d8bfa75f65e21.gif" />
+    <ion-card-header>
+      <ion-button color="secondary" expand="block" (click)="openDevFestRegistration()">Register</ion-button>
+      <ion-card-title>Date: December 3rd, 2022</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      DevFest Florida is a community-run one-day conference aimed to bring technologists, developers, students, tech
+      companies, and speakers together in one location to learn, discuss and experiment with technology.
+      <ion-button class="ion-text-lowercase" size="small" fill="outline" (click)="openDevFest()">
+        <ion-icon slot="start" name="information-circle-outline"></ion-icon>
+        More info...
+      </ion-button>
+      <figure class="quote">
+        <blockquote>
+          “It’s the missing link that connects academia, industry, individuals, potential employers … and offers a space
+          for those that never thought they could be developers.”
+        </blockquote>
+        <figcaption>
+          &mdash; GDG Organizer
+        </figcaption>
+      </figure>
+    </ion-card-content>
+  </ion-card>
+
   <!-- ionic accordion component -->
-  <ion-accordion-group #accordionGroup multiple="true" value="resources" expand="inset" >
+  <ion-accordion-group #accordionGroup multiple="true" value="resources" expand="inset">
     <ion-icon size="large" color="primary" name="albums-outline"></ion-icon>
     <ion-accordion>
       <ion-item slot="header" color="light">
@@ -42,7 +68,7 @@
       <ion-item slot="header" color="light">
         <ion-label>Capacitor</ion-label>
       </ion-item>
-      <div class="ion-padding" slot="content"> 
+      <div class="ion-padding" slot="content">
         <ion-item (click)="openCapacitor()">
           <ion-icon name="globe-outline" slot="end"></ion-icon>
           <ion-label>capacitorjs.com</ion-label>
@@ -72,7 +98,7 @@
       </div>
     </ion-accordion>
   </ion-accordion-group>
-  
+
   <ion-button (click)="onCloseAccordion()">Close All</ion-button>
 
 </ion-content>
