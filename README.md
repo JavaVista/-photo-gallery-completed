@@ -1,41 +1,49 @@
 # GDG Central Florida - Ionic/Capacitor wizardry with Angular
 
-Starter code for Building an Ionic Application with Angular
+This the **completed code** for Building an Ionic Application with Angular
 
 ## The App
 
-We will be creating a Photo Gallery app that allows you to take photos from your device’s camera and display them in a grid and store them in your device.
+It is a Photo Gallery app that allows you to take photos from your device’s camera and display them in a grid and store them in your device.
 
-## Getting Started
+## Extra that was added
 
-Make sure you have the following installed in your computer:
+- The references resources were added to Tab 1 (Tab 1 was renamed Resources).
+- DevFest 2022 information and registration link were also added to the tab Resources.
+- Example of the ionic chip component alerting you to add photos to the Gallery.
+- Tab 3 was renamed Host.
+- The Host tab has my social link information and a link to the presentation slides
 
-- Node.js - Download the LTS version [here](https://nodejs.org/en/).
-- A code editor – For example [Visual Studio Code](https://code.visualstudio.com/). 
-- Ionic CLI – Open your terminal and type `npm install -g @ionic/cli native-run cordova-res`
-  - @ionic/cli - the ionic command line tool
-  - native-run - is a cross-platform command-line utility for running native app binaries (.ipa and .apk files) on iOS and Android devices.
-  - cordova-res - automatically create icon and splash screen resources it was developed for use with Cordova, but Capacitor and other native runtimes are supported.
-- Xcode – for [iOS app deployment](https://developer.apple.com/xcode/) 
-- Android Studio – for [Android app deployment](https://developer.android.com/studio)
+## How to run the project
+
 - Run `npm install` from the project root.
 - Run `ionic serve` in a terminal from the project root.
+
+## 
 
 
 ## Deploying
 
 ### Progressive Web App
 
-1. Run `ionic build`
-2. Push the `www` folder to your hosting service
+- In the root of this project you will find the `www` folder that you can deploy to a hosting service
 
 ### iOS
 
-1. Run `ionic cap add ios`
+- In the root of this project you will find the `ios` folder. This is the standalone project that can be edited with Xcode in your Mac computer.
+- Run `ionic cap open ios` in your terminal to open the project in Xcode.
 
 ### Android
 
-1. Run `ionic cap add android`
+- In the root of this project you will find the `android` folder. You will find it in the apk folder in the root of this project. This is the standalone project that can be edited with Android Studio in your computer.
+- Run `ionic cap open android` in your terminal to open the project in Android Studio.
+
+## APK
+
+I included an APK of the project that can run on a mobile device. To run the apk in your mobile device you will need to download it directly in to your mobile device. 
+
+- Allow Chrome to install unknown apps by going to Settings > Apps > Menu > Special access > Install unknown apps.
+- Download an APK file and open it to install it. Alternatively, transfer the APK Installer from your computer using USB.
 
 ## Reference 
 

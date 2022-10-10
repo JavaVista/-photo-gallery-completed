@@ -13,6 +13,13 @@ export class Tab1Page {
 
   constructor() { }
 
+  openDevFestRegistration = async () => {
+    await Browser.open({ url: 'https://gdg.community.dev/events/details/google-gdg-miami-presents-devfest-florida-2022' });
+  };
+  
+  openDevFest = async () => {
+    await Browser.open({ url: 'https://devfestflorida.com' });
+  };
 
   onCloseAccordion = () => {
     this.accordionGroup.value = 'resources';
