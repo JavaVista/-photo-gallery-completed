@@ -19,7 +19,9 @@ It is a Photo Gallery app that allows you to take photos from your device’s ca
 - Run `npm install` from the project root.
 - Run `ionic serve` in a terminal from the project root.
 
-## 
+## How to Contribute
+
+Pull requests are welcome. Please [open an issue](https://github.com/JavaVista/-photo-gallery-completed/issues/new). For more info see the [CONTRIBUTING](./CONTRIBUTING.md).
 
 
 ## Deploying
